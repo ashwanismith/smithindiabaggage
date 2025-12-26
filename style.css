@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    
+    background:#e7e2bc ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+   
+
+}
+
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20;
+    border: none;
+    background-color: rgb(22, 22, 22);
+    color: #d0cdad;
+}
+
+
+
+.sickimg {
+    width: 500;
+    border-radius: 20;
+}
+
+.card {
+    width: 300;
+    border: 1=0px solid rgba(8, 8, 8, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    animation: fadein 1s ease forwards;
+    transition: 0.25s ease-in-out;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    background-color: #d0cca8;
+
+}
+.card:hover {
+     transform: scale(5.05px);
+    backdrop-filter: blur(30px);
+    border-radius: 20px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass {
+    
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255, 255, 0.3);
+    color: wheat;
+    transition: 1s ease;
+    animation: fadein 1s ease forwards;
+    
+}
+.glass:hover {
+    transform: scale(5.05);
+    backdrop-filter: blur(30px);
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.grid {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}   
+
+#title {
+    font-size: 48;
+    color: #e0e0e0;
+    font-family: "Test1";
+}
+
+@font-face {
+    font-family: "Test1";
+
+    src: url("fonts/ModernHeritage.otf");
+
+}
+
+.but {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    font-family: "Test1";
+    border-radius: 8px;
+    background-color: rgba(225, 225, 225, 0.5);
+    transition: 0.5s ease;
+    color: rgb(15, 15, 15);
+    font-weight:900;
+    
+}
+
+.but:hover {
+    border: 1px solid rgba(15, 66, 9, 0.873);
+    transform: scaleX(1.1);
+}
+
+h2 {
+    color: rgb(38, 39, 38);
+    
+    font-weight: 100;
+}
+p{
+    color: rgb(48, 34, 8);
+}
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+
+    padding: 0 50px;   /* LEFT + RIGHT padding */
+    margin-bottom: 40px;
+    background-color: #39452b;
+}
+
+
+.navitems a {
+    color: wheat;
+    text-decoration: none;
+    margin-left: 10px;
+    
+}
+
+
+
+
